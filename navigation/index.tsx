@@ -23,6 +23,7 @@ import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import HomeScreen from "../screens/HomeScreen/index";
 import ModalScreen from "../screens/ModalScreen";
+import MovieDetailsScreen from "../screens/MovieDetailsScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
 import TabOneScreen from "../screens/TabOneScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
@@ -93,9 +94,10 @@ function BottomTabNavigator() {
     >
       <BottomTab.Screen
         name="Home"
-        component={HomeNavigator}
+        component={MovieDetailsScreen}
         options={({ navigation }: RootTabScreenProps<"Home">) => ({
-          headerShown: false,
+          // headerShown: false,
+          title: "",
           tabBarIcon: ({ color }) => (
             <AntDesign name="home" size={24} color={color} />
           ),
@@ -144,6 +146,11 @@ function HomeNavigator() {
         name="Home"
         component={HomeScreen}
         options={{ headerShown: false }}
+      />
+      <HomeStack.Screen
+        name="MovieDetails"
+        component={MovieDetailsScreen}
+        options={{ title: "" }}
       />
     </HomeStack.Navigator>
   );

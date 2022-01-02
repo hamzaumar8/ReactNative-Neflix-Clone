@@ -42,5 +42,6 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> =
 
 export type HomeStackParamList = {
   Home: undefined;
+  MovieDetails: undefined;
   // Root: NavigatorScreenParams<RootTabParamList> | undefined;
 };
