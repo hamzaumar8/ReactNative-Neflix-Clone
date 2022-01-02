@@ -1,12 +1,14 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    marginVertical: 5,
+    paddingHorizontal: 10,
+  },
   row: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 5,
   },
   image: {
     height: 70,
