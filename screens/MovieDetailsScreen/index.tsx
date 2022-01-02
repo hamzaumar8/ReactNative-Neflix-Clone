@@ -60,20 +60,22 @@ const MovieDetailsScreen = () => {
         <View style={{ flexDirection: "row", marginVertical: 10 }}>
           <View style={{ alignItems: "center", marginHorizontal: 20 }}>
             <TouchableOpacity>
-              <AntDesign name="plus" size={30} color="white" />
-              <Text style={{ color: "darkgrey" }}>My List</Text>
+              <AntDesign name="plus" size={24} color="white" />
+              <Text style={{ color: "darkgrey", marginTop: 3 }}>My List</Text>
             </TouchableOpacity>
           </View>
+
           <View style={{ alignItems: "center", marginHorizontal: 20 }}>
             <TouchableOpacity>
-              <Feather name="thumbs-up" size={30} color="white" />
-              <Text style={{ color: "darkgrey" }}>Like</Text>
+              <Feather name="thumbs-up" size={24} color="white" />
+              <Text style={{ color: "darkgrey", marginTop: 3 }}>Like</Text>
             </TouchableOpacity>
           </View>
+
           <View style={{ alignItems: "center", marginHorizontal: 20 }}>
             <TouchableOpacity>
-              <Ionicons name="share-social" size={30} color="white" />
-              <Text style={{ color: "darkgrey" }}>Share</Text>
+              <Ionicons name="share-social" size={24} color="white" />
+              <Text style={{ color: "darkgrey", marginTop: 3 }}>Share</Text>
             </TouchableOpacity>
           </View>
         </View>
