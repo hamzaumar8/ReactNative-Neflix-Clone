@@ -2,12 +2,14 @@ import {
   AntDesign,
   Entypo,
   Feather,
+  FontAwesome,
   Ionicons,
   MaterialIcons,
 } from "@expo/vector-icons";
 import React from "react";
 import { Image, Pressable, TouchableOpacity } from "react-native";
 import movie from "../../assets/data/movie";
+import EpisodeItem from "../../components/EpisodeItem";
 
 import { Text, View } from "../../components/Themed";
 import styles from "./style";
@@ -74,11 +76,13 @@ const MovieDetailsScreen = () => {
 
           <View style={{ alignItems: "center", marginHorizontal: 20 }}>
             <TouchableOpacity>
-              <Ionicons name="share-social" size={24} color="white" />
+              <FontAwesome name="send-o" size={24} color="white" />
               <Text style={{ color: "darkgrey", marginTop: 3 }}>Share</Text>
             </TouchableOpacity>
           </View>
         </View>
+
+        <EpisodeItem episode={firstEpisode} />
       </View>
     </View>
   );
